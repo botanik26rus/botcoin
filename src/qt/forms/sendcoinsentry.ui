@@ -106,7 +106,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../freicoin.qrc">
+        <iconset resource="../botcoin.qrc">
          <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
        </property>
        <property name="shortcut">
@@ -123,7 +123,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../freicoin.qrc">
+        <iconset resource="../botcoin.qrc">
          <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
        </property>
        <property name="shortcut">
@@ -140,7 +140,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../freicoin.qrc">
+        <iconset resource="../botcoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="shortcut">
@@ -156,7 +156,7 @@
   <customwidget>
    <class>FreicoinAmountField</class>
    <extends>QLineEdit</extends>
-   <header>freicoinamountfield.h</header>
+   <header>botcoinamountfield.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
@@ -166,7 +166,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../freicoin.qrc"/>
+  <include location="../botcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

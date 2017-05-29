@@ -5,7 +5,7 @@
 
 #include "wallet.h"
 #include "walletdb.h"
-#include "freicoinrpc.h"
+#include "botcoinrpc.h"
 #include "init.h"
 #include "base58.h"
 
@@ -176,7 +176,7 @@ Value setaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount <freicoinaddress> <account>\n"
+            "setaccount <botcoinaddress> <account>\n"
             "Sets the account associated with the given address.");
 
     CFreicoinAddress address(params[0].get_str());
@@ -206,7 +206,7 @@ Value getaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount <freicoinaddress>\n"
+            "getaccount <botcoinaddress>\n"
             "Returns the account associated with the given address.");
 
     CFreicoinAddress address(params[0].get_str());
@@ -246,7 +246,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress <freicoinaddress> <amount> [comment] [comment-to]\n"
+            "sendtoaddress <botcoinaddress> <amount> [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -311,7 +311,7 @@ Value signmessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage <freicoinaddress> <message>\n"
+            "signmessage <botcoinaddress> <message>\n"
             "Sign a message with the private key of an address");
 
     EnsureWalletIsUnlocked();
@@ -346,7 +346,7 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <freicoinaddress> <signature> <message>\n"
+            "verifymessage <botcoinaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress  = params[0].get_str();
@@ -383,8 +383,8 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress <freicoinaddress> [minconf=1]\n"
-            "Returns the total amount received by <freicoinaddress> in transactions with at least [minconf] confirmations.");
+            "getreceivedbyaddress <botcoinaddress> [minconf=1]\n"
+            "Returns the total amount received by <botcoinaddress> in transactions with at least [minconf] confirmations.");
 
     // Freicoin address
     CFreicoinAddress address = CFreicoinAddress(params[0].get_str());
@@ -609,7 +609,7 @@ Value sendfrom(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom <fromaccount> <tofreicoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
+            "sendfrom <fromaccount> <tobotcoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -1245,7 +1245,7 @@ Value keypoolrefill(const Array& params, bool fHelp)
 void ThreadTopUpKeyPool(void* parg)
 {
     // Make this thread recognisable as the key-topping-up thread
-    RenameThread("freicoin-key-top");
+    RenameThread("botcoin-key-top");
 
     pwalletMain->TopUpKeyPool();
 }
@@ -1253,7 +1253,7 @@ void ThreadTopUpKeyPool(void* parg)
 void ThreadCleanWalletPassphrase(void* parg)
 {
     // Make this thread recognisable as the wallet relocking thread
-    RenameThread("freicoin-lock-wa");
+    RenameThread("botcoin-lock-wa");
 
     int64 nMyWakeTime = GetTimeMillis() + *((int64*)parg) * 1000;
 
@@ -1460,8 +1460,8 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <freicoinaddress>\n"
-            "Return information about <freicoinaddress>.");
+            "validateaddress <botcoinaddress>\n"
+            "Return information about <botcoinaddress>.");
 
     CFreicoinAddress address(params[0].get_str());
     bool isValid = address.IsValid();

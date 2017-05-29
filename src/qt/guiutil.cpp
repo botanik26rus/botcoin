@@ -1,7 +1,7 @@
 #include "guiutil.h"
-#include "freicoinaddressvalidator.h"
+#include "botcoinaddressvalidator.h"
 #include "walletmodel.h"
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 #include "util.h"
 #include "init.h"
 
@@ -52,7 +52,7 @@ QString dateTimeStr(qint64 nTime)
     return dateTimeStr(QDateTime::fromTime_t((qint32)nTime));
 }
 
-QFont freicoinAddressFont()
+QFont botcoinAddressFont()
 {
     QFont font("Monospace");
     font.setStyleHint(QFont::TypeWriter);
@@ -63,7 +63,7 @@ void setupAddressWidget(QLineEdit *widget, QWidget *parent)
 {
     widget->setMaxLength(FreicoinAddressValidator::MaxAddressLength);
     widget->setValidator(new FreicoinAddressValidator(parent));
-    widget->setFont(freicoinAddressFont());
+    widget->setFont(botcoinAddressFont());
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -77,7 +77,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    if(uri.scheme() != QString("freicoin"))
+    if(uri.scheme() != QString("botcoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -122,13 +122,13 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseFreicoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert freicoin:// to freicoin:
+    // Convert botcoin:// to botcoin:
     //
-    //    Cannot handle this later, because freicoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because botcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("freicoin://"))
+    if(uri.startsWith("botcoin://"))
     {
-        uri.replace(0, 10, "freicoin:");
+        uri.replace(0, 10, "botcoin:");
     }
     QUrl uriInstance(uri);
     return parseFreicoinURI(uriInstance, out);
@@ -354,7 +354,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "freicoin.desktop";
+    return GetAutostartDir() / "botcoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -392,7 +392,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a freicoin.desktop file to the autostart directory:
+        // Write a botcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         optionFile << "Name=Freicoin\n";
@@ -419,7 +419,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     header = tr("Freicoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  freicoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  botcoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 

@@ -3,7 +3,7 @@
 
 #include "addresstablemodel.h"
 #include "optionsmodel.h"
-#include "freicoingui.h"
+#include "botcoingui.h"
 #include "editaddressdialog.h"
 #include "csvmodelwriter.h"
 #include "guiutil.h"

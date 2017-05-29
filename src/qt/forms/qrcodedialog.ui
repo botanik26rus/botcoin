@@ -187,7 +187,7 @@
   <customwidget>
    <class>FreicoinAmountField</class>
    <extends>QSpinBox</extends>
-   <header>freicoinamountfield.h</header>
+   <header>botcoinamountfield.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

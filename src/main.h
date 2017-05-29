@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_MAIN_H
-#define FREICOIN_MAIN_H
+#ifndef BOTCOIN_MAIN_H
+#define BOTCOIN_MAIN_H
 
 #include "bignum.h"
 #include "sync.h"
@@ -547,7 +547,7 @@ public:
      */
     unsigned int GetP2SHSigOpCount(const MapPrevTx& mapInputs) const;
 
-    /** Amount of freicoins spent by this transaction.
+    /** Amount of botcoins spent by this transaction.
         @return sum of all outputs (note: does not include fees)
      */
     mpq GetValueOut() const
@@ -562,7 +562,7 @@ public:
         return i64_to_mpq(nValueOut);
     }
 
-    /** Amount of freicoins coming in to this transaction
+    /** Amount of botcoins coming in to this transaction
         Note that lightweight clients may not know anything besides the hash of previous transactions,
         so may not be able to calculate this.
 

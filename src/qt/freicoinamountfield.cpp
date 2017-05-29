@@ -1,6 +1,6 @@
-#include "freicoinamountfield.h"
+#include "botcoinamountfield.h"
 #include "qvaluecombobox.h"
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 
 #include "guiconstants.h"
 #include "main.h"

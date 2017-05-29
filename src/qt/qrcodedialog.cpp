@@ -1,7 +1,7 @@
 #include "qrcodedialog.h"
 #include "ui_qrcodedialog.h"
 
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
@@ -83,7 +83,7 @@ void QRCodeDialog::genCode()
 
 QString QRCodeDialog::getURI()
 {
-    QString ret = QString("freicoin:%1").arg(address);
+    QString ret = QString("botcoin:%1").arg(address);
     int paramCount = 0;
 
     ui->outUri->clear();

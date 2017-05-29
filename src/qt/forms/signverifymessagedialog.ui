@@ -64,7 +64,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
            </property>
            <property name="shortcut">
@@ -84,7 +84,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
            </property>
            <property name="shortcut">
@@ -130,7 +130,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
            </property>
            <property name="shortcut">
@@ -154,7 +154,7 @@
             <string>&amp;Sign Message</string>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
            </property>
            <property name="autoDefault">
@@ -171,7 +171,7 @@
             <string>&amp;Clear All</string>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="autoDefault">
@@ -270,7 +270,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
            </property>
            <property name="shortcut">
@@ -300,7 +300,7 @@
             <string>&amp;Verify Message</string>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/transaction_0</normaloff>:/icons/transaction_0</iconset>
            </property>
            <property name="autoDefault">
@@ -317,7 +317,7 @@
             <string>&amp;Clear All</string>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="autoDefault">
@@ -383,7 +383,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../freicoin.qrc"/>
+  <include location="../botcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

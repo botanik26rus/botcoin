@@ -1,4 +1,4 @@
-#include "freicoinaddressvalidator.h"
+#include "botcoinaddressvalidator.h"
 
 /* Base58 characters are:
      "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"

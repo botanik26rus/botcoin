@@ -1825,7 +1825,7 @@ bool CTransaction::ConnectInputs(MapPrevTx inputs,
 {
     // Take over previous transactions' spent pointers
     // fBlock is true when this is called from AcceptBlock when a new best-block is added to the blockchain
-    // fMiner is true when called from the internal freicoin miner
+    // fMiner is true when called from the internal botcoin miner
     // ... both are false when called from CTransaction::AcceptToMemoryPool
     if (!IsCoinBase())
     {
@@ -2867,7 +2867,7 @@ Let this be the awaited dawn.";
 
         if (fTestNet)
         {
-            block.nTime    = 1356123600;
+            block.nTime    = 1496073133;
             block.nNonce   = 3098244593;
         }
 
@@ -4589,7 +4589,7 @@ void static FreicoinMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("freicoin-miner");
+    RenameThread("botcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

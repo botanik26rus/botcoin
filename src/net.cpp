@@ -407,7 +407,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("freicoin-ext-ip");
+    RenameThread("botcoin-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -639,7 +639,7 @@ void CNode::copyStats(CNodeStats &stats)
 void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
-    RenameThread("freicoin-net");
+    RenameThread("botcoin-net");
 
     try
     {
@@ -998,7 +998,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("freicoin-UPnP");
+    RenameThread("botcoin-UPnP");
 
     try
     {
@@ -1154,7 +1154,7 @@ static const char *strDNSSeed[][2] = {
 void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("freicoin-dnsseed");
+    RenameThread("botcoin-dnsseed");
 
     try
     {
@@ -1249,7 +1249,7 @@ void ThreadDumpAddress2(void* parg)
 void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
-    RenameThread("freicoin-adrdump");
+    RenameThread("botcoin-adrdump");
 
     try
     {
@@ -1264,7 +1264,7 @@ void ThreadDumpAddress(void* parg)
 void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("freicoin-opencon");
+    RenameThread("botcoin-opencon");
 
     try
     {
@@ -1425,7 +1425,7 @@ void ThreadOpenConnections2(void* parg)
 void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("freicoin-opencon");
+    RenameThread("botcoin-opencon");
 
     try
     {
@@ -1556,7 +1556,7 @@ bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOu
 void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
-    RenameThread("freicoin-msghand");
+    RenameThread("botcoin-msghand");
 
     try
     {
@@ -1803,7 +1803,7 @@ void static Discover()
 void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
-    RenameThread("freicoin-start");
+    RenameThread("botcoin-start");
 
     if (semOutbound == NULL) {
         // initialize semaphore

@@ -1249,7 +1249,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, mpq> >& vecSend, int 
 
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-freicoin-address
+                    // change transaction isn't always pay-to-botcoin-address
                     CScript scriptChange;
                     scriptChange.SetDestination(vchPubKey.GetID());
 

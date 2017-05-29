@@ -1,10 +1,10 @@
 /*
- * Qt4 freicoin GUI.
+ * Qt4 botcoin GUI.
  *
  * W.J. van der Laan 2011-2012
  * The Bitcoin Developers 2011-2012
  */
-#include "freicoingui.h"
+#include "botcoingui.h"
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
@@ -19,7 +19,7 @@
 #include "addresstablemodel.h"
 #include "transactionview.h"
 #include "overviewpage.h"
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 #include "guiconstants.h"
 #include "askpassphrasedialog.h"
 #include "notificator.h"
@@ -73,8 +73,8 @@ FreicoinGUI::FreicoinGUI(QWidget *parent):
     restoreWindowGeometry();
     setWindowTitle(tr("Freicoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
-    qApp->setWindowIcon(QIcon(":icons/freicoin"));
-    setWindowIcon(QIcon(":icons/freicoin"));
+    qApp->setWindowIcon(QIcon(":icons/botcoin"));
+    setWindowIcon(QIcon(":icons/botcoin"));
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
@@ -240,7 +240,7 @@ void FreicoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/freicoin"), tr("&About Freicoin"), this);
+    aboutAction = new QAction(QIcon(":/icons/botcoin"), tr("&About Freicoin"), this);
     aboutAction->setToolTip(tr("Show information about Freicoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -249,7 +249,7 @@ void FreicoinGUI::createActions()
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
     optionsAction->setToolTip(tr("Modify configuration options for Freicoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/freicoin"), tr("Show / &Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/botcoin"), tr("Show / &Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     encryptWalletAction->setCheckable(true);
@@ -334,10 +334,10 @@ void FreicoinGUI::setClientModel(ClientModel *clientModel)
         {
             setWindowTitle(windowTitle() + QString(" ") + tr("[testnet]"));
 #ifndef Q_OS_MAC
-            qApp->setWindowIcon(QIcon(":icons/freicoin_testnet"));
-            setWindowIcon(QIcon(":icons/freicoin_testnet"));
+            qApp->setWindowIcon(QIcon(":icons/botcoin_testnet"));
+            setWindowIcon(QIcon(":icons/botcoin_testnet"));
 #else
-            MacDockIconHandler::instance()->setIcon(QIcon(":icons/freicoin_testnet"));
+            MacDockIconHandler::instance()->setIcon(QIcon(":icons/botcoin_testnet"));
 #endif
             if(trayIcon)
             {

@@ -430,7 +430,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../freicoin.qrc">
+            <iconset resource="../botcoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -450,7 +450,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../freicoin.qrc"/>
+  <include location="../botcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

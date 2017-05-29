@@ -245,13 +245,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
-        <translation>Aviso: Si encriptas tu monedero y pierdes tu contraseña, &lt;b&gt;PERDERÁS TODOS TUS FREICOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BOTCOINS&lt;/b&gt;!</source>
+        <translation>Aviso: Si encriptas tu monedero y pierdes tu contraseña, &lt;b&gt;PERDERÁS TODOS TUS BOTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
-        <translation>Freicoin se cerrará ahora para completar el proceso de encriptación. Recuerda que encriptar tu monedero no te proteje por completo del robo de tus freicoins por malware infectando tu ordenador.</translation>
+        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your botcoins from being stolen by malware infecting your computer.</source>
+        <translation>Freicoin se cerrará ahora para completar el proceso de encriptación. Recuerda que encriptar tu monedero no te proteje por completo del robo de tus botcoins por malware infectando tu ordenador.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -391,12 +391,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
 <context>
     <name>FreicoinGUI</name>
     <message>
-        <location filename="../freicoin.cpp" line="+109"/>
+        <location filename="../botcoin.cpp" line="+109"/>
         <source>A fatal error occured. Freicoin can no longer continue safely and will quit.</source>
         <translation>Se ha producido un error fatal. Freicoin no puede continuar de forma segura y se cerrará.</translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+74"/>
+        <location filename="../botcoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
     </message>
@@ -418,7 +418,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
-        <translation>Enviar freicoins a una dirección</translation>
+        <translation>Enviar botcoins a una dirección</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2144,18 +2144,18 @@ Dirección: %4
     </message>
 </context>
 <context>
-    <name>freicoin-core</name>
+    <name>botcoin-core</name>
     <message>
-        <location filename="../freicoinstrings.cpp" line="+9"/>
+        <location filename="../botcoinstrings.cpp" line="+9"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=freicoinrpc
+rpcuser=botcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
 </source>
-        <translation>%s, debes especificar una contraseña rpc (rpcpassword) en el fichero de configuración:⏎ %s⏎ Se recomienda usar la siguiente contraseña aleatoria:⏎ rpcuser=freicoinrpc⏎ rpcpassword=%s⏎ (no necesita recordar esta contraseña)⏎ Si el archivo no existe, crearlo con permisos de lectura sólo para el propietario.⏎</translation>
+        <translation>%s, debes especificar una contraseña rpc (rpcpassword) en el fichero de configuración:⏎ %s⏎ Se recomienda usar la siguiente contraseña aleatoria:⏎ rpcuser=botcoinrpc⏎ rpcpassword=%s⏎ (no necesita recordar esta contraseña)⏎ Si el archivo no existe, crearlo con permisos de lectura sólo para el propietario.⏎</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -2580,8 +2580,8 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or freicoind</source>
-        <translation>Enviar comandos a -server o freicoind</translation>
+        <source>Send command to -server or botcoind</source>
+        <translation>Enviar comandos a -server o botcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2648,8 +2648,8 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: freicoin.conf)</source>
-        <translation>Especificar el archivo de configuración (predeterminado: freicoin.conf)</translation>
+        <source>Specify configuration file (default: botcoin.conf)</source>
+        <translation>Especificar el archivo de configuración (predeterminado: botcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2663,8 +2663,8 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: freicoind.pid)</source>
-        <translation>Especifica el archivo pid (predeterminado: freicoind.pid)</translation>
+        <source>Specify pid file (default: botcoind.pid)</source>
+        <translation>Especifica el archivo pid (predeterminado: botcoind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>

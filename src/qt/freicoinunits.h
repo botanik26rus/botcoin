@@ -1,5 +1,5 @@
-#ifndef FREICOINUNITS_H
-#define FREICOINUNITS_H
+#ifndef BOTCOINUNITS_H
+#define BOTCOINUNITS_H
 
 #include "bignum.h" // for mpq
 
@@ -65,4 +65,4 @@ private:
 };
 typedef FreicoinUnits::Unit FreicoinUnit;
 
-#endif // FREICOINUNITS_H
+#endif // BOTCOINUNITS_H

@@ -1,4 +1,4 @@
-Source: freicoin
+Source: botcoin
 Section: utils
 Priority: optional
 Maintainer: Mark Friedenbach <mark@monetize.io>
@@ -23,10 +23,10 @@ Build-Depends: debhelper,
  libgmp3-dev
 Standards-Version: 3.9.2
 Homepage: http://freico.in/
-Vcs-Git: git://github.com/freicoin/freicoin.git
-Vcs-Browser: http://github.com/freicoin/freicoin
+Vcs-Git: git://github.com/botcoin/botcoin.git
+Vcs-Browser: http://github.com/botcoin/botcoin
 
-Package: freicoind
+Package: botcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based demurrage currency - daemon
@@ -40,10 +40,10 @@ Description: peer-to-peer network based demurrage currency - daemon
  .
  Full transaction history is stored locally at each client.
  .
- This package provides freicoind, a combined daemon and CLI tool to
+ This package provides botcoind, a combined daemon and CLI tool to
  interact with the daemon.
 
-Package: freicoin-qt
+Package: botcoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based demurrage currency - Qt GUI

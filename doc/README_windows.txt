@@ -18,11 +18,11 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run freicoin-qt.exe.
+Unpack the files into a directory and run botcoin-qt.exe.
 
-If you have Microsoft Security Essentials, you need to add freicoin.exe to its
+If you have Microsoft Security Essentials, you need to add botcoin.exe to its
 "Excluded processes" list.  Microsoft Security Essentials->Settings tab,
-select Excluded processes, press Add, select freicoin.exe, OK, Save changes.
+select Excluded processes, press Add, select botcoin.exe, OK, Save changes.
 
 The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play using a menu entry or set your firewall

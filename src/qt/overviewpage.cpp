@@ -2,7 +2,7 @@
 #include "ui_overviewpage.h"
 
 #include "walletmodel.h"
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 #include "optionsmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"

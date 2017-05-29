@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include "db.h"
 #include "walletdb.h"
-#include "freicoinrpc.h"
+#include "botcoinrpc.h"
 #include "net.h"
 #include "init.h"
 #include "util.h"
@@ -42,7 +42,7 @@ void ExitTimeout(void* parg)
 void StartShutdown()
 {
 #ifdef QT_GUI
-    // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in freicoin.cpp afterwards)
+    // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in botcoin.cpp afterwards)
     uiInterface.QueueShutdown();
 #else
     // Without UI, Shutdown() can simply be started in a new thread
@@ -56,7 +56,7 @@ void Shutdown(void* parg)
     static bool fTaken;
 
     // Make this thread recognisable as the shutdown thread
-    RenameThread("freicoin-shutoff");
+    RenameThread("botcoin-shutoff");
 
     bool fFirstThread = false;
     {
@@ -83,7 +83,7 @@ void Shutdown(void* parg)
         printf("Freicoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
-        // ensure non-UI client gets exited here, but let Freicoin-Qt reach 'return 0;' in freicoin.cpp
+        // ensure non-UI client gets exited here, but let Freicoin-Qt reach 'return 0;' in botcoin.cpp
         exit(0);
 #endif
     }
@@ -123,7 +123,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/freicoin.conf are parsed in qt/freicoin.cpp's main()
+        // If Qt is used, parameters/botcoin.conf are parsed in qt/botcoin.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -134,13 +134,13 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to freicoind / RPC client
+            // First part of help message is specific to botcoind / RPC client
             std::string strUsage = _("Freicoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  freicoind [options]                     " + "\n" +
-                  "  freicoind [options] <command> [params]  " + _("Send command to -server or freicoind") + "\n" +
-                  "  freicoind [options] help                " + _("List commands") + "\n" +
-                  "  freicoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  botcoind [options]                     " + "\n" +
+                  "  botcoind [options] <command> [params]  " + _("Send command to -server or botcoind") + "\n" +
+                  "  botcoind [options] help                " + _("List commands") + "\n" +
+                  "  botcoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -150,7 +150,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "freicoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "botcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -176,7 +176,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect freicoind signal handlers
+    // Connect botcoind signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);
@@ -218,8 +218,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: freicoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: freicoind.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: botcoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: botcoind.pid)") + "\n" +
         "  -gen                   " + _("Generate coins") + "\n" +
         "  -gen=0                 " + _("Don't generate coins") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
@@ -298,7 +298,7 @@ std::string HelpMessage()
     return strUsage;
 }
 
-/** Initialize freicoin.
+/** Initialize botcoin.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2()
@@ -653,7 +653,7 @@ bool AppInit2()
         return InitError(_("Error loading blkindex.dat"));
 
     // as LoadBlockIndex can take several minutes, it's possible the user
-    // requested to kill freicoin-qt during the last operation. If so, exit.
+    // requested to kill botcoin-qt during the last operation. If so, exit.
     // As the program has not fully started yet, Shutdown() is possibly overkill.
     if (fRequestShutdown)
     {

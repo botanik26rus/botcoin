@@ -244,12 +244,12 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE FREICOINS VERLIEREN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BOTCOINS&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE BOTCOINS VERLIEREN&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
+        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your botcoins from being stolen by malware infecting your computer.</source>
         <translation>Freicoin wird jetzt beendet, um den Verschlüsselungsprozess abzuschliessen. Bitte beachten Sie, dass die Verschlüsselung Ihrer Brieftasche nicht vollständig vor Diebstahl Ihrer Freicoins durch Schadsoftware schützt, die Ihren Computer befällt.</translation>
     </message>
     <message>
@@ -390,12 +390,12 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
 <context>
     <name>FreicoinGUI</name>
     <message>
-        <location filename="../freicoin.cpp" line="+109"/>
+        <location filename="../botcoin.cpp" line="+109"/>
         <source>A fatal error occured. Freicoin can no longer continue safely and will quit.</source>
         <translation>Ein schwerer Fehler liegt vor. Freicoin kann nicht länger sicher weiterlaufen und wird beendet. </translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+74"/>
+        <location filename="../botcoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
     </message>
@@ -2141,13 +2141,13 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>freicoin-core</name>
+    <name>botcoin-core</name>
     <message>
-        <location filename="../freicoinstrings.cpp" line="+9"/>
+        <location filename="../botcoinstrings.cpp" line="+9"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=freicoinrpc
+rpcuser=botcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
@@ -2155,7 +2155,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, Sie müssen den Wert rpcpasswort in der Konfigurationsdatei angeben:
 %s
 Es wird empfohlen das folgende Zufallspasswort zu verwenden:
-rpcuser=freicoinrpc
+rpcuser=botcoinrpc
 rpcpassword=%s
 (Sie müssen sich dieses Passwort nicht merken!)
 Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Leserechten nur für den Dateibesitzer.
@@ -2582,8 +2582,8 @@ Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Lese
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or freicoind</source>
-        <translation>Befehl an -server oder freicoind senden</translation>
+        <source>Send command to -server or botcoind</source>
+        <translation>Befehl an -server oder botcoind senden</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2647,8 +2647,8 @@ Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Lese
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: freicoin.conf)</source>
-        <translation>Konfigurationsdatei angeben (Standard: freicoin.conf)</translation>
+        <source>Specify configuration file (default: botcoin.conf)</source>
+        <translation>Konfigurationsdatei angeben (Standard: botcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2662,8 +2662,8 @@ Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Lese
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: freicoind.pid)</source>
-        <translation>PID-Datei angeben (Standard: freicoind.pid)</translation>
+        <source>Specify pid file (default: botcoind.pid)</source>
+        <translation>PID-Datei angeben (Standard: botcoind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>

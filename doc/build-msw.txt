@@ -85,6 +85,6 @@ cp *.h miniupnpc/
 Freicoin
 --------
 DOS prompt:
-cd \freicoin\src
+cd \botcoin\src
 mingw32-make -f makefile.mingw
-strip freicoind.exe
+strip botcoind.exe

@@ -1,2 +1,2 @@
-debian/bin/freicoind usr/bin
-src/freicoind usr/lib/freicoin
+debian/bin/botcoind usr/bin
+src/botcoind usr/lib/botcoin

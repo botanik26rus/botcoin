@@ -244,12 +244,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BOTCOINS&lt;/b&gt;!</source>
         <translation>Предупреждение: если вы зашифровали свой кошелек и забудете свою кодовую фразу, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ ФРЕЙКОИНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
+        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your botcoins from being stolen by malware infecting your computer.</source>
         <translation>Freicoin закроется сейчас чтобы завершить процесс зашифровки. Помните, что зашифровав свой кошелек, вы не сможете полностью защитить свои фрейкоины от кражи вредоносным ПО, заражающим ваш компьютер.</translation>
     </message>
     <message>
@@ -390,12 +390,12 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>FreicoinGUI</name>
     <message>
-        <location filename="../freicoin.cpp" line="+109"/>
+        <location filename="../botcoin.cpp" line="+109"/>
         <source>A fatal error occured. Freicoin can no longer continue safely and will quit.</source>
         <translation>Случилась фатальная ошибка. Freicoin не может далее благополучно функционировать и будет закрыт.</translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+74"/>
+        <location filename="../botcoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
     </message>
@@ -2152,13 +2152,13 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>freicoin-core</name>
+    <name>botcoin-core</name>
     <message>
-        <location filename="../freicoinstrings.cpp" line="+9"/>
+        <location filename="../botcoinstrings.cpp" line="+9"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=freicoinrpc
+rpcuser=botcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
@@ -2166,7 +2166,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, вы должны установить rpcpassword в конфигурационном файле:
  %s
 Рекомендуется использовать следующий случайный пароль:
-rpcuser=freicoinrpc
+rpcuser=botcoinrpc
 rpcpassword=%s
 (вам не нужно его запоминать)
 Если файл не существует, создайте его с правом чтения только для владельца.
@@ -2593,8 +2593,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or freicoind</source>
-        <translation>Отправить команду для -server или freicoind</translation>
+        <source>Send command to -server or botcoind</source>
+        <translation>Отправить команду для -server или botcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2658,8 +2658,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: freicoin.conf)</source>
-        <translation>Указать файл конфигурации (по умолчанию: freicoin.conf)</translation>
+        <source>Specify configuration file (default: botcoin.conf)</source>
+        <translation>Указать файл конфигурации (по умолчанию: botcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2673,8 +2673,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: freicoind.pid)</source>
-        <translation>Указать файл идентификатора процесса (по умолчанию: freicoind.pid)</translation>
+        <source>Specify pid file (default: botcoind.pid)</source>
+        <translation>Указать файл идентификатора процесса (по умолчанию: botcoind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>

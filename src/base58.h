@@ -12,8 +12,8 @@
 // - E-mail usually won't line-break if there's no punctuation to break at.
 // - Double-clicking selects the whole number as one word if it's all alphanumeric.
 //
-#ifndef FREICOIN_BASE58_H
-#define FREICOIN_BASE58_H
+#ifndef BOTCOIN_BASE58_H
+#define BOTCOIN_BASE58_H
 
 #include <string>
 #include <vector>

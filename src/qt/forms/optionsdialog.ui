@@ -77,7 +77,7 @@
         </layout>
        </item>
        <item>
-        <widget class="QCheckBox" name="freicoinAtStartup">
+        <widget class="QCheckBox" name="botcoinAtStartup">
          <property name="toolTip">
           <string>Automatically start Freicoin after logging in to the system.</string>
          </property>
@@ -442,7 +442,7 @@
   <customwidget>
    <class>FreicoinAmountField</class>
    <extends>QSpinBox</extends>
-   <header>freicoinamountfield.h</header>
+   <header>botcoinamountfield.h</header>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>

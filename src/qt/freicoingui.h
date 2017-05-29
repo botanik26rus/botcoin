@@ -1,5 +1,5 @@
-#ifndef FREICOINGUI_H
-#define FREICOINGUI_H
+#ifndef BOTCOINGUI_H
+#define BOTCOINGUI_H
 
 #include "bignum.h" // for mpq
 
@@ -44,7 +44,7 @@ public:
     */
     void setClientModel(ClientModel *clientModel);
     /** Set the wallet model.
-        The wallet model represents a freicoin wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a botcoin wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     void setWalletModel(WalletModel *walletModel);

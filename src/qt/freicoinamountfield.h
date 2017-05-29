@@ -1,5 +1,5 @@
-#ifndef FREICOINFIELD_H
-#define FREICOINFIELD_H
+#ifndef BOTCOINFIELD_H
+#define BOTCOINFIELD_H
 
 #include "bignum.h" // for mpq
 
@@ -10,7 +10,7 @@ class QDoubleSpinBox;
 class QValueComboBox;
 QT_END_NAMESPACE
 
-/** Widget for entering freicoin amounts.
+/** Widget for entering botcoin amounts.
   */
 class FreicoinAmountField: public QWidget
 {
@@ -61,4 +61,4 @@ private slots:
 };
 
 
-#endif // FREICOINFIELD_H
+#endif // BOTCOINFIELD_H

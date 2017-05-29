@@ -1,7 +1,7 @@
 #include "sendcoinsdialog.h"
 #include "ui_sendcoinsdialog.h"
 #include "walletmodel.h"
-#include "freicoinunits.h"
+#include "botcoinunits.h"
 #include "addressbookpage.h"
 #include "optionsmodel.h"
 #include "sendcoinsentry.h"
